@@ -1,0 +1,101 @@
+
+/* Custom buttons container - vertical layout */
+.custom-buttons-container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Custom inquiry button - brown style */
+.custom-inquiry-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  background-color: #8B6F47 !important;
+  color: white !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 6px -1px rgba(139, 111, 71, 0.3), 
+              0 2px 4px -1px rgba(139, 111, 71, 0.2),
+              0 0 20px rgba(139, 111, 71, 0.15) !important;
+  border: none !important;
+  width: auto !important;
+  min-width: 200px !important;
+  justify-content: center !important;
+}
+
+.custom-inquiry-button:hover {
+  background-color: #9B7F57 !important;
+  box-shadow: 0 6px 8px -1px rgba(139, 111, 71, 0.4), 
+              0 4px 6px -1px rgba(139, 111, 71, 0.3),
+              0 0 25px rgba(139, 111, 71, 0.25) !important;
+  transform: translateY(-1px) !important;
+  color: white !important;
+}
+
+.custom-inquiry-button svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  color: white !important;
+  stroke: white !important;
+  fill: none !important;
+}
+
+/* Custom view work button - outlined style */
+.custom-view-work-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  background-color: transparent !important;
+  color: white !important;
+  border: 1px solid white !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  width: auto !important;
+  min-width: 200px !important;
+  justify-content: center !important;
+}
+
+.custom-view-work-button:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+.custom-view-work-button svg {
+  width: 1rem !important;
+  height: 1rem !important;
+  color: white !important;
+  stroke: white !important;
+  fill: none !important;
+}
+
+/* Ensure social links remain horizontal */
+#hero [class*="social"],
+#hero a[href*="github.com"],
+#hero a[href*="linkedin.com"],
+#hero a[href*="x.com"],
+#hero a[href*="twitter.com"],
+#hero a[href^="mailto:"]:not([href*="docs.google.com"]) {
+  display: inline-flex !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+/* Container for social links */
+#hero [class*="social"] {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+}

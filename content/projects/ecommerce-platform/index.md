@@ -1,30 +1,27 @@
 ---
-title: "E-Commerce Platform"
+title: "미디어 리터러시, 교육과 만나다"
 date: 2024-11-15
-summary: "E-commerce API backend with Stripe payments, inventory management, and real-time webhooks"
+summary: "뉴스, 영화, 광고, 소셜 미디어, 인포그래픽. . .
+미디어 리터러시 교육을 위한 반짝이는 수업 아이디어"
 tags: 
-  - Backend
-  - Node.js
-  - API
-  - E-Commerce
+  - 미디어
+  - 리터러시
+  - 교육
+  # - E-Commerce
 tech_stack:
-  - React
-  - TypeScript
-  - Node.js
-  - Express
-  - PostgreSQL
-  - Stripe
-  - Redis
-  - Docker
-links:
-  - type: github
-    url: https://github.com/alexjohnson/ecommerce-platform
-    label: Code
-  - type: live
-    url: https://shop-demo.example.com
-    label: Demo
+  - 미디어
+  - 리터러시
+  - 교육
+
+# links:
+#   - type: github
+#     url: https://github.com/alexjohnson/ecommerce-platform
+#     label: Code
+#   - type: live
+#     url: https://shop-demo.example.com
+#     label: Demo
 featured: true
-status: "Live"
+# status: "Live"
 role: "Lead Developer"
 duration: "4 months"
 team_size: 2

@@ -1,28 +1,26 @@
 ---
-title: "TaskFlow - Project Management Tool"
+title: "동화를 통한 자존감 이야기"
 date: 2024-09-20
-summary: "Real-time collaborative task management application with drag-and-drop Kanban boards and team features"
+summary: "나의 자존감을 높이고,타인의 자존감도 높여주는 리더로 성장하기를…"
 tags:
-  - Full-Stack
-  - Next.js
-  - Real-Time
-  - Productivity
+  - 동화
+  # - Next.js
+  # - Real-Time
+  # - Productivity
 tech_stack:
-  - Next.js
-  - TypeScript
-  - Prisma
-  - PostgreSQL
-  - WebSockets
-  - Tailwind CSS
-links:
-  - type: github
-    url: https://github.com/alexjohnson/taskflow
-    label: Code
-  - type: live
-    url: https://taskflow-demo.example.com
-    label: Demo
+  - 동화
+  - 자존감 향상
+  - 자아 형성
+
+# links:
+#   - type: github
+#     url: https://github.com/alexjohnson/taskflow
+#     label: Code
+#   - type: live
+#     url: https://taskflow-demo.example.com
+#     label: Demo
 featured: true
-status: "Live"
+# status: "Live"
 role: "Solo Developer"
 duration: "2 months"
 team_size: 1

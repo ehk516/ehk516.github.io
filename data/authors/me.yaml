@@ -2,32 +2,22 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Alex Johnson
-  given: Alex
-  family: Johnson
+  display: 은효경
+  given: 은
+  family: 효경
 postnominals: []
 status:
-  icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
+  icon: "🎓"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
 role: Full-Stack Developer
 email: alex@example.com
 bio: |
-  Full-stack developer with 5+ years of experience building scalable web applications.
-  Passionate about modern JavaScript, cloud architecture, and creating delightful user experiences.
+  공교육·기업·공공기관 대상 미디어·AI 리터러시 교육 강의·연수·컨설팅 문의 환영
 
 affiliations:
   - name: Tech Corp
     url: https://techcorp.example.com
 
-links:
-  - icon: at-symbol
-    url: mailto:alex@example.com
-    label: E-mail Me
-  - icon: brands/github
-    url: https://github.com/alexjohnson
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnson/
-  - icon: brands/x
-    url: https://x.com/alexjohnson
+links: []
 
 interests:
   - Web Development
@@ -36,41 +26,53 @@ interests:
   - Developer Experience
 
 education:
-  - degree: B.S. Computer Science
-    institution: State University
-    start: 2015-09-01
-    end: 2019-05-31
+  - degree: 박사과정 수료
+    institution: 동국대학교 대학원
+    start: ''
+    end: 2020
     summary: |
-      Focus on software engineering and distributed systems.
-      Senior project on distributed caching systems.
-    button:
-      text: View Project
-      url: https://github.com/alexjohnson/senior-project
-      icon: brands/github
+      박사과정 수료
+  - degree: 신문방송학 석사
+    institution: 동국대학교 언론정보대학원
+    start: ''
+    end: 2010
+    summary: |
+      신문방송학 석사 학위 취득
 
 experience:
-  - role: Senior Software Engineer
-    org: Tech Corp
-    start: 2023-01-01
+  - role: 미디어 강사
+    org: 경기도교육청 미디어교육센터
+    start: 2024-04-01
     summary: |
-      Lead development of microservices architecture serving 1M+ users.
-      Improved API response time by 40% through optimization.
-      Mentored team of 5 junior developers.
-  - role: Full-Stack Developer
-    org: Startup Inc
-    start: 2021-06-01
-    end: 2022-12-31
+      미디어 리터러시 교육 강의 및 연수 진행
+  - role: 통일교육위원
+    org: 통일부
+    start: 2022-05-01
     summary: |
-      Built and deployed 3 production applications from scratch.
-      Implemented CI/CD pipeline reducing deployment time by 60%.
-      Led migration from monolith to microservices architecture.
-  - role: Junior Developer
-    org: Web Agency
-    start: 2020-01-01
-    end: 2021-05-31
+      통일교육 정책 자문 및 교육 프로그램 개발
+  - role: 도서선정위원회 위원
+    org: 한국도서관협회 병영독서활성화 지원 사업
+    start: 2022-05-01
+    end: 2022-05-31
     summary: |
-      Developed client websites using React and modern web technologies.
-      Participated in code reviews and agile ceremonies.
+      병영독서활성화를 위한 도서 선정 업무
+  - role: 기자
+    org: 소년한국일보
+    start: 2018-03-01
+    end: 2019-12-31
+    summary: |
+      청소년 미디어 관련 기사 취재 및 작성
+  - role: 자문위원
+    org: 대통령직속 민주평화통일자문회의
+    start: 2019-09-01
+    end: 2019-09-30
+    summary: |
+      통일 정책 자문 활동
+  - role: 미디어강사
+    org: 한국언론진흥재단
+    start: 2007-01-01
+    summary: |
+      미디어 리터러시 교육 강의 및 연수 진행
 
 skills:
   - name: Development
