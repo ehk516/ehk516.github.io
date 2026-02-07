@@ -52,8 +52,9 @@
   align-items: center !important;
   gap: 0.5rem !important;
   background-color: transparent !important;
-  color: white !important;
-  border: 1px solid white !important;
+  /* Light mode: black text and border */
+  color: #000000 !important;
+  border: 1px solid #8B6F47 !important;
   border-radius: 0.5rem !important;
   padding: 0.75rem 1.5rem !important;
   font-weight: 500 !important;
@@ -64,18 +65,79 @@
   justify-content: center !important;
 }
 
-.custom-view-work-button:hover {
+/* Dark mode: white text and border */
+@media (prefers-color-scheme: dark) {
+  .custom-view-work-button {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+  
+  .custom-view-work-button:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+  
+  .custom-view-work-button svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+  }
+  
+  .custom-view-work-button:hover svg {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+  }
+}
+
+/* Class-based dark mode support */
+html.dark .custom-view-work-button,
+body.dark .custom-view-work-button,
+[data-theme="dark"] .custom-view-work-button {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+html.dark .custom-view-work-button:hover,
+body.dark .custom-view-work-button:hover,
+[data-theme="dark"] .custom-view-work-button:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
-  color: white !important;
-  border-color: white !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+html.dark .custom-view-work-button svg,
+body.dark .custom-view-work-button svg,
+[data-theme="dark"] .custom-view-work-button svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+html.dark .custom-view-work-button:hover svg,
+body.dark .custom-view-work-button:hover svg,
+[data-theme="dark"] .custom-view-work-button:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Light mode hover */
+.custom-view-work-button:hover {
+  background-color: rgba(139, 111, 71, 0.1) !important;
+  color: #000000 !important;
+  border-color: #9B7F57 !important;
 }
 
 .custom-view-work-button svg {
   width: 1rem !important;
   height: 1rem !important;
-  color: white !important;
-  stroke: white !important;
+  /* Light mode: brown icon */
+  color: #8B6F47 !important;
+  stroke: #8B6F47 !important;
   fill: none !important;
+}
+
+.custom-view-work-button:hover svg {
+  color: #9B7F57 !important;
+  stroke: #9B7F57 !important;
 }
 
 /* Ensure social links remain horizontal */
@@ -98,4 +160,187 @@
   flex-wrap: wrap !important;
   justify-content: center !important;
   gap: 0.5rem !important;
+}
+
+/* Contact section with video on the right - limit container size */
+#contact-wrapper {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0.5rem !important;
+  padding: 2rem !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+/* Dark mode border */
+@media (prefers-color-scheme: dark) {
+  #contact-wrapper {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+}
+
+html.dark #contact-wrapper,
+body.dark #contact-wrapper,
+[data-theme="dark"] #contact-wrapper {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+#contact-wrapper > div,
+#contact-wrapper > div > div {
+  max-width: 100% !important;
+  width: 100% !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}
+
+.contact-section-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 3.92rem !important;
+  align-items: stretch !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+.contact-content {
+  flex: 0 0 52% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+.contact-info-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+  height: 100% !important;
+}
+
+.contact-info-content h2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.contact-info-content p {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.contact-email {
+  margin: 0.5rem 0 0.25rem 0 !important;
+  font-size: 0.9rem !important;
+}
+
+.contact-email a {
+  font-size: 0.9rem !important;
+}
+
+.contact-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  background-color: #6366f1 !important;
+  color: white !important;
+  padding: 0.625rem 1.25rem !important;
+  border-radius: 0.5rem !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  font-size: 0.9rem !important;
+  transition: all 0.3s ease !important;
+  margin-top: 0.5rem !important;
+  width: fit-content !important;
+}
+
+.contact-button:hover {
+  background-color: #4f46e5 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.3) !important;
+}
+
+.contact-video {
+  flex: 0 0 48% !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  overflow: visible !important;
+  max-width: 100% !important;
+}
+
+.youtube-thumbnail-link {
+  display: block !important;
+  text-decoration: none !important;
+  width: 100% !important;
+  flex-shrink: 0 !important;
+}
+
+.youtube-thumbnail {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  overflow: hidden !important;
+  border-radius: 0.5rem !important;
+  cursor: pointer !important;
+}
+
+.youtube-thumbnail-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.youtube-play-button {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 68px !important;
+  height: 48px !important;
+  transition: transform 0.2s ease !important;
+}
+
+.youtube-thumbnail:hover .youtube-play-button {
+  transform: translate(-50%, -50%) scale(1.1) !important;
+}
+
+.youtube-caption {
+  margin-top: 0.75rem !important;
+  margin-bottom: 0 !important;
+  text-align: center !important;
+  font-size: 0.875rem !important;
+  color: inherit !important;
+  opacity: 0.8 !important;
+  flex-shrink: 0 !important;
+}
+
+/* Make video wider (more horizontal) */
+.contact-video .youtube-embed {
+  aspect-ratio: 21 / 9 !important;
+}
+
+@media (max-width: 768px) {
+  .contact-section-wrapper {
+    flex-direction: column !important;
+    padding: 0 1rem !important;
+    gap: 2rem !important;
+  }
+  
+  .contact-content {
+    flex: 1 1 100% !important;
+  }
+  
+  .contact-video {
+    flex: 1 1 100% !important;
+  }
+  
+  .youtube-embed {
+    padding-bottom: 56.25% !important;
+  }
 }
