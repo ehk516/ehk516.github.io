@@ -1,3 +1,53 @@
+/* Site logo in navbar - multiple selectors to catch different HugoBlox structures */
+header a[href="/"]::before,
+nav a[href="/"]::before,
+.navbar-brand::before,
+header .navbar-brand::before,
+[data-header] a[href="/"]::before,
+header .site-name::before,
+nav .site-name::before {
+  content: "" !important;
+  display: inline-block !important;
+  width: 4.5em !important;
+  height: 4.5em !important;
+  background-image: url("/icon2.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  vertical-align: middle !important;
+  margin-right: 0.5em !important;
+  margin-top: -1em !important;
+  margin-bottom: -1em !important;
+  line-height: 0 !important;
+}
+
+/* Also target text content directly */
+header a[href="/"]:first-child::before,
+nav a[href="/"]:first-child::before {
+  content: "" !important;
+  display: inline-block !important;
+  width: 4.5em !important;
+  height: 4.5em !important;
+  background-image: url("/icon2.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  vertical-align: middle !important;
+  margin-right: 0.5em !important;
+  margin-top: -1em !important;
+  margin-bottom: -1em !important;
+  line-height: 0 !important;
+}
+
+/* Reduce vertical spacing in navbar */
+header a[href="/"],
+nav a[href="/"],
+.navbar-brand,
+header .navbar-brand {
+  line-height: 1 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 
 /* Custom buttons container - vertical layout */
 .custom-buttons-container {

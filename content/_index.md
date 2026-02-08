@@ -22,7 +22,7 @@ sections:
         enable: true
         prefix: ""
         strings:
-          - "Media"
+          - "Media Literacy"
           - "AI Literacy"
         type_speed: 100
         delete_speed: 80
@@ -55,7 +55,7 @@ sections:
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
-            [블로그] 교육·강의 소개 (공교육·기업·공공기관)
+            [블로그] 강의 소개 (공교육·기업·공공기관)
           </a>
           <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EC%9D%80%ED%9A%A8%EA%B2%BD" class="custom-view-work-button" target="_blank" rel="noopener noreferrer">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,60 +126,60 @@ sections:
       title: 경력사항
       date_format: 2006년 1월
       items:
-        - title: 미디어 강사
-          company: 경기도교육청 미디어교육센터
-          company_url: ''
-          company_logo: ''
-          location: 경기도
-          date_start: '2024-04-01'
-          date_end: ''
-          description: |2-
-            * 미디어 리터러시 교육 강의 및 연수 진행
-        - title: 통일교육위원
-          company: 통일부
-          company_url: ''
-          company_logo: ''
-          location: 서울
-          date_start: '2022-05-01'
-          date_end: ''
-          description: |2-
-            * 통일교육 정책 자문 및 교육 프로그램 개발
-        - title: 도서선정위원회 위원
-          company: 한국도서관협회 병영독서활성화 지원 사업
-          company_url: ''
-          company_logo: ''
-          location: 서울
-          date_start: '2022-05-01'
-          date_end: '2022-05-31'
-          description: |2-
-            * 병영독서활성화를 위한 도서 선정 업무
-        - title: 기자
-          company: 소년한국일보
-          company_url: ''
-          company_logo: ''
-          location: 서울
-          date_start: '2018-03-01'
-          date_end: '2019-12-31'
-          description: |2-
-            * 청소년 미디어 관련 기사 취재 및 작성
-        - title: 자문위원
-          company: 대통령직속 민주평화통일자문회의
-          company_url: ''
-          company_logo: ''
-          location: 서울
-          date_start: '2019-09-01'
-          date_end: '2019-09-30'
-          description: |2-
-            * 통일 정책 자문 활동
-        - title: 미디어강사
-          company: 한국언론진흥재단
-          company_url: ''
-          company_logo: ''
-          location: 서울
-          date_start: '2007-01-01'
-          date_end: ''
-          description: |2-
-            * 미디어 리터러시 교육 강의 및 연수 진행
+        # - title: 미디어 강사
+        #   company: 경기도교육청 미디어교육센터
+        #   company_url: ''
+        #   company_logo: ''
+        #   location: 경기도
+        #   date_start: '2024-04-01'
+        #   date_end: ''
+        #   description: |2-
+        #     * 미디어 리터러시 교육 강의 및 연수 진행
+        # - title: 통일교육위원
+        #   company: 통일부
+        #   company_url: ''
+        #   company_logo: ''
+        #   location: 서울
+        #   date_start: '2022-05-01'
+        #   date_end: ''
+        #   description: |2-
+        #     * 통일교육 정책 자문 및 교육 프로그램 개발
+        # - title: 도서선정위원회 위원
+        #   company: 한국도서관협회 병영독서활성화 지원 사업
+        #   company_url: ''
+        #   company_logo: ''
+        #   location: 서울
+        #   date_start: '2022-05-01'
+        #   date_end: '2022-05-31'
+        #   description: |2-
+        #     * 병영독서활성화를 위한 도서 선정 업무
+        # - title: 기자
+        #   company: 소년한국일보
+        #   company_url: ''
+        #   company_logo: ''
+        #   location: 서울
+        #   date_start: '2018-03-01'
+        #   date_end: '2019-12-31'
+        #   description: |2-
+        #     * 청소년 미디어 관련 기사 취재 및 작성
+        # - title: 자문위원
+        #   company: 대통령직속 민주평화통일자문회의
+        #   company_url: ''
+        #   company_logo: ''
+        #   location: 서울
+        #   date_start: '2019-09-01'
+        #   date_end: '2019-09-30'
+        #   description: |2-
+        #     * 통일 정책 자문 활동
+        # - title: 미디어강사
+        #   company: 한국언론진흥재단
+        #   company_url: ''
+        #   company_logo: ''
+        #   location: 서울
+        #   date_start: '2007-01-01'
+        #   date_end: ''
+        #   description: |2-
+        #     * 미디어 리터러시 교육 강의 및 연수 진행
     design:
       columns: '1'
       background:
@@ -239,9 +239,9 @@ sections:
               미디어·AI 리터러시 교육 강의·연수·컨설팅 문의, 언제나 환영합니다!</p>
               <div class="contact-email">
                 <strong>이메일:</strong>
-                <a href="mailto:ehk516@hanmail.net">ehk516@hanmail.net</a>
+                <a href="mailto:ehk516@naver.com">ehk516@naver.com</a>
               </div>
-              <a href="mailto:ehk516@hanmail.net" class="contact-button">
+              <a href="mailto:ehk516@naver.com" class="contact-button">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width: 1.25rem; height: 1.25rem;">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                 </svg>
