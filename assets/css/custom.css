@@ -18,7 +18,12 @@ nav .site-name::before {
   margin-right: 0.5em !important;
   margin-top: -1em !important;
   margin-bottom: -1em !important;
-  line-height: 0 !important;
+  line-height: 1 !important;
+  font-size: 16px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 10 !important;
 }
 
 /* Also target text content directly */
@@ -47,6 +52,62 @@ header .navbar-brand {
   line-height: 1 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+/* Hide site name text in navbar, show only logo */
+header a[href="/"],
+nav a[href="/"],
+.navbar-brand,
+header .navbar-brand,
+[data-header] a[href="/"],
+header .site-name,
+nav .site-name {
+  font-size: 0 !important;
+  color: transparent !important;
+  position: relative !important;
+  overflow: visible !important;
+  line-height: 1 !important;
+}
+
+/* Ensure text is hidden but logo pseudo-element is not affected */
+header a[href="/"]:not(::before),
+nav a[href="/"]:not(::before) {
+  font-size: 0 !important;
+}
+
+/* Hide text content inside navbar links, but not ::before pseudo-element */
+header a[href="/"] > *,
+nav a[href="/"] > *,
+.navbar-brand > *,
+header .navbar-brand > * {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Ensure logo is still visible - override parent styles */
+header a[href="/"]::before,
+nav a[href="/"]::before,
+.navbar-brand::before,
+header .navbar-brand::before,
+[data-header] a[href="/"]::before,
+header .site-name::before,
+nav .site-name::before {
+  font-size: 16px !important;
+  text-indent: 0 !important;
+  overflow: visible !important;
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: transparent !important;
+  position: relative !important;
+  z-index: 10 !important;
+  width: 4.5em !important;
+  height: 4.5em !important;
+  background-image: url("/icon2.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 /* Custom buttons container - vertical layout */

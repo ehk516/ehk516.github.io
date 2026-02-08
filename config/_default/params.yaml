@@ -23,7 +23,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: "Educator, Writer"
     # Site meta description for search engines and social sharing
-    description: "ox."
+    description: "미디어·AI 리터러시 교육자"
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)
