@@ -15,15 +15,16 @@ hugoblox:
     # Site name - shown in navbar, footer, copyright, and browser title by default
     # name: "은(誾)작가"
     # Site logo - path to logo image (relative to static/ or assets/)
-    logo: "icon2.png"                              # e.g., "logo.png" or "media/logo.png"
+    # Used for navbar and Open Graph og:image (social media preview thumbnail)
+    logo: "media/icon2.png"                        # e.g., "logo.png" or "media/logo.png"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
     tagline: "Educator, Writer"
-    # Site meta description for search engines and social sharing
-    description: "미디어·AI 리터러시 교육자"
+    # Site meta description for search engines and social sharing (used for Open Graph preview)
+    description: "미디어·AI 리터러시 교육 강의·연수·컨설팅"
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)
@@ -131,7 +132,8 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: ""
+    # Also used for Open Graph og:title (social media preview title)
+    title: "은작가"
     # For local_business identity type only
     location:
       address:
